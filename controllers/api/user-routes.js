@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { User, Post, Comment } = require("../../models");
-
+// Get All Users
 router.get("/", (req, res) => {
   User.findAll({
     attributes: { exclude: ["[password"] },
@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Get One Post
 router.get("/:id", (req, res) => {
   User.findOne({
     attributes: { exclude: ["password"] },
@@ -50,7 +50,7 @@ router.get("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Create Post
 router.post("/", (req, res) => {
   User.create({
     username: req.body.username,
@@ -71,7 +71,7 @@ router.post("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Get One Post
 router.post("/login", (req, res) => {
   User.findOne({
     where: {
@@ -112,7 +112,7 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
-
+// Update Post
 router.put("/:id", (req, res) => {
   User.update(req.body, {
     individualHooks: true,
@@ -130,7 +130,7 @@ router.put("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Delete Post
 router.delete("/:id", (req, res) => {
   User.destroy({
     where: { id: req.params.id },
