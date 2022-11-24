@@ -6,8 +6,9 @@
 - [Description](#description)
 - [Screenshot](#screenshot)
 - [Repository](#repository)
+- [Deployment](#deployment)
+- [Heroku](#heroku)
 - [Questions](#questions)
-- [Heroku](#Heroku)
 ## Description
 This is an assignment that was assigned from the Case Western BootCamp. I had to build a Tech Blog using Model View Controller (MVC). I used mysql2, express, sequelize, handlebars, and dotenv.
 ## Screenshot
