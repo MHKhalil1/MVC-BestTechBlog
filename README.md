@@ -11,9 +11,11 @@
 ## Description
 This is an assignment that was assigned from the Case Western BootCamp. I had to build a Tech Blog using Model View Controller (MVC). I used mysql2, express, sequelize, handlebars, and dotenv.
 ## Screenshot
-[This is a screenshot of the webpage](./images/MVC-Screenshot.png)
+[This is a screenshot of the webpage](images\MVC-Screenshot.png)
 ## Repository
 [MVC-BestTechBlog Repository URL](https://github.com/MHKhalil1/MVC-BestTechBlog.git)
+## Deployment 
+[This is the Deployed Link Of The MVC-TechBlog](https://mhkhalil1.github.io/MVC-BestTechBlog/)
 ## Heroku
 [This Is My Heroku Link](https://aqueous-mountain-36488.herokuapp.com/login)
 ## Questions
